@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  --red: #e8193c;
+  --red-dark: #c9102f;
+  --pink: #f48fb1;
+  --pink-light: #fce4ec;
+  --pink-mid: #f8bbd0;
+  --text-dark: #2d1a20;
+  --text-mid: #8d6370;
+  --border: #f4c2d0;
+  --bg: #fff8f9;
+  --white: #ffffff;
+
+  /* Tablo renkleri */
+  --table-header-bg: #e8193c;      /* 1. seviye — koyu kırmızı */
+  --table-section-bg: #ad1229;     /* 2. seviye — bordo kırmızı */
+  --table-subsection-bg: #f48fb1;  /* 3. seviye — pembe */
+  --table-row-even: #fff0f4;
+  --table-border: #f4c2d0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  font-family: 'Nunito', sans-serif;
+  color: var(--text-dark);
+  padding: 36px 24px;
+}
+
+/* ── Header ── */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.page-header a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-mid);
+  text-decoration: none;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 14px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.page-header a:hover {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-dark);
+  letter-spacing: -0.3px;
+}
+
+hr {
+  border: none;
+  border-top: 1.5px solid var(--pink-mid);
+  margin-bottom: 28px;
+}
+
+/* ── Table wrapper ── */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* ── Table ── */
+table {
+  font-family: 'Nunito', sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+  font-size: 13px;
+  background: var(--white);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(232, 25, 60, 0.08);
+  border: 1.5px solid var(--table-border);
+}
+
+td, th {
+  text-align: left;
+  padding: 9px 14px;
+  border: 1px solid var(--table-border);
+}
+
+/* Zebra satırlar */
+tr:nth-child(even) td {
+  background-color: var(--table-row-even);
+}
+
+/* ── Ana başlık satırı (koyu kırmızı) ── */
+.col-header th {
+  background-color: var(--table-header-bg);
+  color: var(--white);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-color: rgba(255,255,255,0.15);
+}
+
+/* ── Bölüm başlığı - 2. seviye (bordo) ── */
+.section-header td,
+.section-header th {
+  background-color: var(--table-section-bg) !important;
+  color: var(--white) !important;
+  font-weight: 800;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  border-color: rgba(255,255,255,0.15);
+}
+
+/* ── Alt bölüm başlığı - 3. seviye (pembe) ── */
+.subsection-header td,
+.subsection-header th,
+.subsection-header {
+  background-color: var(--table-subsection-bg) !important;
+  color: #7a1a30 !important;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border-color: rgba(255,255,255,0.2);
+}
+
+/* ── Resim hücresi ── */
+.img-cell {
+  text-align: center;
+  color: var(--text-mid);
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--pink-light) !important;
+  border-color: var(--border);
+  vertical-align: middle;
+  min-width: 80px;
+}
+
+/* ── SKU ── */
+.sku {
+  font-weight: 700;
+  color: var(--red);
+  white-space: nowrap;
+}
+
+/* ── Fiyat ── */
+.price {
+  font-weight: 700;
+  text-align: right;
+  white-space: nowrap;
+  color: var(--text-mid);
+}
