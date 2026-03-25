@@ -4,644 +4,776 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controller</title>
-
-    <style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 12px;
-}
-
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 4px;
-}
-
-tr:nth-child(even) {
-  background-color: #D6EEEE;
-}
-</style>
+    <link rel="stylesheet" href="../CSS/styles_Product.css">
 
 </head>
 <body>
+  
+    <div class="page-header">
+    <a href="../index.html">← Back</a>
      <h1>Controller</h1>
-<table border="1" style="width:70%">
-  <tr>
-    <th style="background-color: #343a40;"></th>
-    <th style="background-color: #343a40; color:white;">SKU</th>
-    <th style="background-color: #343a40; color:white;">Description</th>
-    <th style="background-color: #343a40; color:white;">Price $</th>
+  </div>
+  <hr>    <!-- Yatay Çizgi -->
+
+    <div class="table-wrapper">
+
+<table>
+      <!-- Sütun başlıkları -->
+      <tr class="col-header">
+        <th></th>
+        <th>SKU</th>
+        <th>Description</th>
+        <th>Price $</th>
+      </tr>
+
+
+    <tr class="section-header">
+        <td colspan="4">Advanced Optimizer Controller</td>
+    </tr>
+
+  <tr class="subsection-header" data-group="group1">
+      <td colspan="4">Hardware</td>
   </tr>
-  <tr>
-    <th colspan="4" style="text-align:center; background-color:#246a73; color:white;">
-        Advanced Optimizer Controller
-    </th>
+
+      <tr class="data-row" data-group="group1">
+        <td class="img-cell"></td>
+        <td class="sku">N-ADV-112-H-C</td>
+        <td>Advanced Controller  1 Isolated Eth. Port, 1 Switch Eth. Port, 2 RS-485 Port, HMI Port</td>
+        <td class="price">-</td>
+      </tr>
+
+        <tr class="data-row" data-group="group1">
+        <td class="img-cell"></td>
+        <td class="sku">N-ADV-133-H-C</td>
+        <td>Advanced Controller  1 Isolated Eth. Port, 3 Switch Eth. Port, 3 RS-485 Port, HMI Port</td>
+        <td class="price">-</td>
+      </tr>
+
+        <tr class="data-row" data-group="group1">
+        <td class="img-cell"></td>
+        <td class="sku">N-ADV-134-H-C</td>
+        <td>Advanced Controller  1 Isolated Eth. Port, 3 Switch Eth. Port, 4 RS-485 Port, HMI Port</td>
+        <td class="price">-</td>
+      </tr>
+
+  <tr class="subsection-header" data-group="group2">
+      <td colspan="4">Core Licenses</td>
   </tr>
-    <tr>
-    <td rowspan="51">Resim Eklenecek</td>
-    <th colspan="3" style="background-color: #368f8b;">Hardware</th>
+
+        <tr class="data-row" data-group="group2">
+        <td class="img-cell"></td>
+        <td class="sku">N-ADV-00050-100PCE</td>
+        <td>Advanced core license for 50 global points, 100 Panel Bus points and 18 month initial SMA</td>
+        <td class="price">-</td>
+      </tr>
+
+              <tr class="data-row" data-group="group2">
+        <td class="img-cell"></td>
+        <td class="sku">N-ADV-00500-100PCE</td>
+        <td>Advanced core license for 500 global points, 100 Panel Bus points and 18 month initial SMA</td>
+        <td class="price">-</td>
+      </tr>
+
+              <tr class="data-row" data-group="group2">
+        <td class="img-cell"></td>
+        <td class="sku">N-ADV-01250-255PCE</td>
+        <td>Advanced core license for 1250 global points, 255 Panel Bus points and 18 month initial SMA</td>
+        <td class="price">-</td>
+      </tr>
+
+              <tr class="data-row" data-group="group2">
+        <td class="img-cell"></td>
+        <td class="sku">N-ADV-05000-255PCE</td>
+        <td>Advanced core license for 5000 global points, 255 Panel Bus points and 18 month initial SMA</td>
+        <td class="price">-</td>
+      </tr>
+
+              <tr class="data-row" data-group="group2">
+        <td class="img-cell"></td>
+        <td class="sku">N-ADV-10000-255PCE</td>
+        <td>Advanced core license for 10000 global points, 255 Panel Bus points and 18 month initial SMA</td>
+        <td class="price">-</td>
+      </tr>
+
+        <tr class="data-row" data-group="group2">
+        <td class="img-cell"></td>
+        <td class="sku">N-ADV-PCE-DEMO</td>
+        <td>Demo License for Advanced Controller</td>
+        <td class="price">-</td>
+      </tr>
+
+
+  <tr class="subsection-header" data-group="group3">
+    <td colspan="4">Panel Bus Upgrade Licenses</td>
   </tr>
-  <tr>
-    <td>N-ADV-112-H-C</td>
-    <td>Advanced Controller  1 Isolated Eth. Port, 1 Switch Eth. Port, 2 RS-485 Port, HMI Port</td>
-    <td>-</td>
+
+      <tr class="data-row" data-group="group3">
+      <td class="img-cell"></td>
+      <td class="sku">N-ADV-0100P-UP</td>
+      <td>Upgrade License for 100 Panel Bus points</td>
+      <td class="price">-</td>
   </tr>
-  <tr>
-    <td>N-ADV-133-H-C</td>
-    <td>Advanced Controller  1 Isolated Eth. Port, 3 Switch Eth. Port, 3 RS-485 Port, HMI Port</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>N-ADV-134-H-C</td>
-    <td>Advanced Controller  1 Isolated Eth. Port, 3 Switch Eth. Port, 4 RS-485 Port, HMI Port</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <th colspan="3" style="background-color: #368f8b;">Core Licenses</th>
-  </tr>
-    <tr>
-    <td>N-ADV-00050-100PCE</td>
-    <td>Advanced core license for 50 global points, 100 Panel Bus points and 18 month initial SMA</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>N-ADV-00500-100PCE</td>
-    <td>Advanced core license for 500 global points, 100 Panel Bus points and 18 month initial SMA</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>N-ADV-01250-255PCE</td>
-    <td>Advanced core license for 1250 global points, 255 Panel Bus points and 18 month initial SMA</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>N-ADV-05000-255PCE</td>
-    <td>Advanced core license for 5000 global points, 255 Panel Bus points and 18 month initial SMA</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>N-ADV-10000-255PCE</td>
-    <td>Advanced core license for 10000 global points, 255 Panel Bus points and 18 month initial SMA</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>N-ADV-PCE-DEMO</td>
-    <td>Demo License for Advanced Controller</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <th colspan="3" style="background-color: #368f8b;">Panel Bus Upgrade Licenses</th>
-  </tr>
-  <tr>
-    <td>N-ADV-0100P-UP</td>
-    <td>Upgrade License for 100 Panel Bus points</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>N-ADV-0255P-UP</td>
+      <tr class="data-row" data-group="group3">
+      <td class="img-cell"></td>
+    <td class="sku">N-ADV-0255P-UP</td>
     <td>Upgrade License for 255 Panel Bus points</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <th colspan="3" style="background-color: #368f8b;">Global Point Upgrade Licenses</th>
+
+  <tr class="subsection-header" data-group="group4">
+      <td colspan="4">Global Point Upgrade Licenses</td>
   </tr>
-  <tr>
-    <td>PIN-DEV-1</td>
+    <tr class="data-row" data-group="group4">
+    <td class="img-cell"></td>
+    <td class="sku">PIN-DEV-1</td>
     <td>Additional 50 global points capacity.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>PIN-DEV-2</td>
+    <tr class="data-row" data-group="group4">
+    <td class="img-cell"></td>
+    <td class="sku">PIN-DEV-2</td>
     <td>Additional 100 global points capacity.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>PIN-DEV-10</td>
+    <tr class="data-row" data-group="group4">
+    <td class="img-cell"></td>
+    <td class="sku">PIN-DEV-10</td>
     <td>Additional 500 global points capacity.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>PIN-DEV-25</td>
+    <tr class="data-row" data-group="group4">
+    <td class="img-cell"></td>
+    <td class="sku">PIN-DEV-25</td>
     <td>Additional 1250 global points capacity.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>PIN-DEV-50</td>
+    <tr class="data-row" data-group="group4">
+    <td class="img-cell"></td>
+    <td class="sku">PIN-DEV-50</td>
     <td>Additional 2500 global points capacity</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <th colspan="3" style="background-color: #368f8b;">Maintenance Licenses</th>
+
+    <tr class="subsection-header" data-group="group5">
+      <td colspan="4">Maintenance Licenses</td>
   </tr>
-  <tr>
-    <td>SMA-0001-1YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0001-1YR</td>
     <td>1 year maintenance for up to 99 global points</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0001-3YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0001-3YR</td>
     <td>3 year maintenance for up to 99 global points</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0001-5YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0001-5YR</td>
     <td>5 year maintenance for up to 99 global points.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0002-1YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0002-1YR</td>
     <td>1 year maintenance for up to 499 global points.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0002-3YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0002-3YR</td>
     <td>3 year maintenance for up to 499 global points.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0002-5YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0002-5YR</td>
     <td>5 year maintenance for up to 499 global points.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0010-1YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0010-1YR</td>
     <td>1 year maintenance for up to 1249 global points.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0010-3YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0010-3YR</td>
     <td>3 year maintenance for up to 1249 global points.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0010-5YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0010-5YR</td>
     <td>5 year maintenance for up to 1249 global points.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0025-1YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0025-1YR</td>
     <td>1 year maintenance for up to 4999 global points.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0025-3YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0025-3YR</td>
     <td>3 year maintenance for up to 4999 global points.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0025-5YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0025-5YR</td>
     <td>5 year maintenance for up to 4999 global points</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0100-1YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0100-1YR</td>
     <td>1 year maintenance for up to 9999 global points.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0100-3YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0100-3YR</td>
     <td>3 year maintenance for up to 9999 global points.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0100-5YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0100-5YR</td>
     <td>5 year maintenance for up to 9999 global points.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0200-1YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0200-1YR</td>
     <td>1 year maintenance for up to 10000 or more global points.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0200-3YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0200-3YR</td>
     <td>3 year maintenance for up to 10000 or more global points.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SMA-0200-5YR</td>
+    <tr class="data-row" data-group="group5">
+    <td class="img-cell"></td>
+    <td class="sku">SMA-0200-5YR</td>
     <td>5 year maintenance for up to 10000 or more global points.</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <th colspan="3" style="background-color: #368f8b;">Accessories and Replacement Parts</th>
+
+  <tr class="subsection-header" data-group="group6">
+      <td colspan="4">Accessories and Replacement Parts</td>
   </tr>
-  <tr>
-    <td>HMI-DN</td>
+    <tr class="data-row" data-group="group6">
+    <td class="img-cell"></td>
+    <td class="sku">HMI-DN</td>
     <td>Touch screen HMI (DIN rail mount)</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>HMI-WL</td>
+    <tr class="data-row" data-group="group6">
+    <td class="img-cell"></td>
+    <td class="sku">HMI-WL</td>
     <td>Touch screen HMI with Panel Door/Wall Base</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>ENDCOVER-10</td>
+    <tr class="data-row" data-group="group6">
+    <td class="img-cell"></td>
+    <td class="sku">ENDCOVER-10</td>
     <td>Protective end covers, pack of 10</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>TCVR-140-10</td>
+    <tr class="data-row" data-group="group6">
+    <td class="img-cell"></td>
+    <td class="sku">TCVR-140-10</td>
     <td>Terminal covers 5.5 inches (140 mm), pack of 10</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SCRW-TB-3-BLK-50</td>
+    <tr class="data-row" data-group="group6">
+    <td class="img-cell"></td>
+    <td class="sku">SCRW-TB-3-BLK-50</td>
     <td>Black 3 way screw terminals, pack of 50</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SCRW-TB-3-GRY-50</td>
+    <tr class="data-row" data-group="group6">
+    <td class="img-cell"></td>
+    <td class="sku">SCRW-TB-3-GRY-50</td>
     <td>Grey 3 way screw terminals, pack of 50</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>PUSH-TB-3-BLK-50</td>
+    <tr class="data-row" data-group="group6">
+    <td class="img-cell"></td>
+    <td class="sku">PUSH-TB-3-BLK-50</td>
     <td>Black 3 way push terminals, pack of 50</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>PUSH-TB-3-GRY-50</td>
+    <tr class="data-row" data-group="group6">
+    <td class="img-cell"></td>
+    <td class="sku">PUSH-TB-3-GRY-50</td>
     <td>Grey 3 way push terminals, pack of 50</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>DIN-CLIP-10</td>
+    <tr class="data-row" data-group="group6">
+    <td class="img-cell"></td>
+    <td class="sku">DIN-CLIP-10</td>
     <td>Din rail clip, pack of 10</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>REMOTE-ANT-KIT</td>
+    <tr class="data-row" data-group="group6">
+    <td class="img-cell"></td>
+    <td class="sku">REMOTE-ANT-KIT</td>
     <td>Wi-Fi Antenna kit</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>IO-ADPT-S-2</td>
+    <tr class="data-row" data-group="group6">
+    <td class="img-cell"></td>
+    <td class="sku">IO-ADPT-S-2</td>
     <td>Wiring adapters, Power & Comms, Serial, pack of 2</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <th colspan="4" style="text-align:center; background-color:#246a73; color:white;">
-        HAWK 8000 Controller
-    </th>
+    <tr class="section-header">
+        <td colspan="4">HAWK 8000 Controller</td>
+    </tr>
+
+  <tr class="subsection-header" data-group="group7">
+      <td colspan="4">Hardware</td>
   </tr>
-  <tr>
-    <td rowspan="36">Resim Eklenecek</td>
-    <th colspan="3" style="background-color: #368f8b;">Hardware</th>
-  </tr>
-  <tr>
-    <td>CLNXSERIES8</td>
+    <tr class="data-row" data-group="group7">
+    <td class="img-cell"></td>
+    <td class="sku">CLNXSERIES8</td>
     <td>HAWK8 NO WIFI W/O LICENSE</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNXSERIES8W02</td>
+    <tr class="data-row" data-group="group7">
+    <td class="img-cell"></td>
+    <td class="sku">CLNXSERIES8W02</td>
     <td>HAWK8 WITH WIFI ZONE 2 W/O LICENSE</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNXHAWK8-SD</td>
+    <tr class="data-row" data-group="group7">
+    <td class="img-cell"></td>
+    <td class="sku">CLNXHAWK8-SD</td>
     <td>HAWK8 SD CARD</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <th colspan="3" style="background-color: #368f8b;">Core Licenses</th>
+
+    <tr class="subsection-header" data-group="group8">
+      <td colspan="4">Core Licenses</td>
   </tr>
-  <tr>
-    <td>CLNXHAWK8-8100P</td>
+    <tr class="data-row" data-group="group8">
+    <td class="img-cell"></td>
+    <td class="sku">CLNXHAWK8-8100P</td>
     <td>HAWK8 BASE LIC 100 Points</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNXHAWK8-8005</td>
+    <tr class="data-row" data-group="group8">
+    <td class="img-cell"></td>
+    <td class="sku">CLNXHAWK8-8005</td>
     <td>HAWK8 BASE LIC 250 POINTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNXHAWK8-8010</td>
+    <tr class="data-row" data-group="group8">
+    <td class="img-cell"></td>
+    <td class="sku">CLNXHAWK8-8010</td>
     <td>HAWK8 BASE LIC 500 POINTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNXHAWK8-8025</td>
+    <tr class="data-row" data-group="group8">
+    <td class="img-cell"></td>
+    <td class="sku">CLNXHAWK8-8025</td>
     <td>HAWK8 BASE LIC 1250 POINTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNXHAWK8-8100</td>
+    <tr class="data-row" data-group="group8">
+    <td class="img-cell"></td>
+    <td class="sku">CLNXHAWK8-8100</td>
     <td>HAWK8 BASE LIC 5000 POINTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNXHAWK8-8200</td>
+    <tr class="data-row" data-group="group8">
+    <td class="img-cell"></td>
+    <td class="sku">CLNXHAWK8-8200</td>
     <td>HAWK8 BASE LIC 10000 POINTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <th colspan="3" style="background-color: #368f8b;">Upgrade Licenses</th>
+
+  <tr class="subsection-header" data-group="group9">
+      <td colspan="4">Upgrade Licenses</td>
   </tr>
-  <tr>
-    <td>CLNX-DEVICE-UP-10</td>
+    <tr class="data-row" data-group="group9">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-DEVICE-UP-10</td>
     <td>HAWK8 PLUS 500 POINTS UPGRADE</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-DEVICE-UP-25</td>
+    <tr class="data-row" data-group="group9">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-DEVICE-UP-25</td>
     <td>HAWK8 PLUS 1250 POINTS UPGRADE</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-DEVICE-UP-50</td>
+    <tr class="data-row" data-group="group9">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-DEVICE-UP-50</td>
     <td>HAWK8 PLUS 2500 POINTS UPGRADE</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNXEMC12</td>
+    <tr class="data-row" data-group="group9">
+    <td class="img-cell"></td>
+    <td class="sku">CLNXEMC12</td>
     <td>ENERGYVISION CONTR BASE LIC 12 METER PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <th colspan="3" style="background-color: #368f8b;">Expension Module</th>
+
+    <tr class="subsection-header" data-group="group10">
+      <td colspan="4">Expension Module</td>
   </tr>
-  <tr>
-    <td>HON-NXEM-2x485</td>
+    <tr class="data-row" data-group="group10">
+    <td class="img-cell"></td>
+    <td class="sku">HON-NXEM-2x485</td>
     <td>HAWK8 RS485 EXPANSION MODULE DUAL PORT</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>HON-NXEM-232</td>
+    <tr class="data-row" data-group="group10">
+    <td class="img-cell"></td>
+    <td class="sku">HON-NXEM-232</td>
     <td>HAWK8 RS232 EXPANSION MODULE SINGLE PORT</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>HON-NXEM-LON</td>
+    <tr class="data-row" data-group="group10">
+    <td class="img-cell"></td>
+    <td class="sku">HON-NXEM-LON</td>
     <td>HAWK8 LON EXPANSION MODULE SINGLE PORT</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <th colspan="3" style="background-color: #368f8b;">Maintenance Licenses</th>
+
+  <tr class="subsection-header" data-group="group11">
+      <td colspan="4">Maintenance License</td>
   </tr>
-  <tr>
-    <td>CLNX-SMA-8005-1YR</td>
+    <tr class="data-row" data-group="group11">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-SMA-8005-1YR</td>
     <td>HAWK8 1YR S/W UPDATE FOR 250-499 PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-SMA-8005-3YR</td>
+    <tr class="data-row" data-group="group11">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-SMA-8005-3YR</td>
     <td>HAWL8 3YR S/W UPDATE FOR 250-499 PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-SMA-8005-5YR</td>
+    <tr class="data-row" data-group="group11">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-SMA-8005-5YR</td>
     <td>HAWK8 5YR S/W UPDATE FOR 250-499 PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-SMA-8010-1YR</td>
+    <tr class="data-row" data-group="group11">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-SMA-8010-1YR</td>
     <td>HAWK8 1YR S/W UPDATE FOR 500-1249 PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-SMA-8010-3YR</td>
+    <tr class="data-row" data-group="group11">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-SMA-8010-3YR</td>
     <td>HAWK8 3YR S/W UPDATE FOR 500-1249 PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-SMA-8010-5YR</td>
+    <tr class="data-row" data-group="group11">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-SMA-8010-5YR</td>
     <td>HAWK8 5YR S/W UPDATE FOR 500-1249 PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-SMA-8025-1YR</td>
+    <tr class="data-row" data-group="group11">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-SMA-8025-1YR</td>
     <td>HAWK8 1YR S/W UPDATE FOR 1250-4999 PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-SMA-8025-3YR</td>
+    <tr class="data-row" data-group="group11">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-SMA-8025-3YR</td>
     <td>HAWK8 3YR S/W UPDATE FOR 1250-4999 PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-SMA-8025-5YR</td>
+    <tr class="data-row" data-group="group11">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-SMA-8025-5YR</td>
     <td>HAWK8 5YR S/W UPDATE FOR 1250-4999 PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-SMA-8100-1YR</td>
+    <tr class="data-row" data-group="group11">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-SMA-8100-1YR</td>
     <td>HAWK8 1YR S/W UPDATE FOR 5000-9999 PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-SMA-8100-3YR</td>
+    <tr class="data-row" data-group="group11">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-SMA-8100-3YR</td>
     <td>HAWK8 3YR S/W UPDATE FOR 5000-9999 PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-SMA-8100-5YR</td>
+    <tr class="data-row" data-group="group11">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-SMA-8100-5YR</td>
     <td>HAWK8 5YR S/W UPDATE FOR 5000-9999 PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-SMA-8200-1YR</td>
+    <tr class="data-row" data-group="group11">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-SMA-8200-1YR</td>
     <td>HAWK8 1YR S/W UPDATE FOR 10000+ PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-SMA-8200-3YR</td>
+    <tr class="data-row" data-group="group11">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-SMA-8200-3YR</td>
     <td>HAWK8 3YR S/W UPDATE FOR 10000+ PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CLNX-SMA-8200-5YR</td>
+    <tr class="data-row" data-group="group11">
+    <td class="img-cell"></td>
+    <td class="sku">CLNX-SMA-8200-5YR</td>
     <td>HAWK8 5YR S/W UPDATE FOR 10000+ PTS</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <th colspan="4" style="text-align:center; background-color:#246a73; color:white;">
-        PEC Controller
-    </th>
-  </tr>
-  <tr>
-    <td rowspan="2">Resim Eklenecek</td>
-    <td>PEC8445-PB1-SM</td>
+    <tr class="section-header">
+        <td colspan="4">PEC Controller</td>
+    </tr>
+    <tr class="data-row" data-group="group12">
+    <td class="img-cell"></td>
+    <td class="sku">PEC8445-PB1-SM</td>
     <td>BACnet IP, 8UI, 4DI, 4AO, 5DO, 2 Eth port, 1 Slyk Bus port, support max. 8 PUC I/O Modules</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>PEC8445-PB1-SO</td>
+    <tr class="data-row" data-group="group12">
+    <td class="img-cell"></td>
+    <td class="sku">PEC8445-PB1-SO</td>
     <td>BACnet IP, 8UI, 4DI, 4AO, 5DO, 2 Eth port, 1 Slyk Bus port, support max. 8 PUC and Modbus RTU</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-    <tr>
-    <th colspan="4" style="text-align:center; background-color:#246a73; color:white;">
-        Unitary Controller
-    </th>
+    <tr class="section-header">
+        <td colspan="4">Unitary Controller</td>
+    </tr>
+
+  <tr class="subsection-header" data-group="group13">
+      <td colspan="4">24Vac</td>
   </tr>
-  <tr>
-    <td rowspan="36">Resim Eklenecek</td>
-    <th colspan="3" style="background-color: #368f8b;">24Vac</th>
-  </tr>
-  <tr>
-    <td>UN-RS0844ES24NMC</td>
+    <tr class="data-row" data-group="group13">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RS0844ES24NMC</td>
     <td>Small, 8UIO, 4DO(SSR), 4DO(Relay), BACnet IP, No Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RS0844ESB24NMC</td>
+    <tr class="data-row" data-group="group13">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RS0844ESB24NMC</td>
     <td>Small, 8UIO, 4DO(SSR), 4DO(Relay), BACnet IP, Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RS0844MS24NMC</td>
+    <tr class="data-row" data-group="group13">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RS0844MS24NMC</td>
     <td>Small, 8UIO, 4DO(SSR), 4DO(Relay), BACnet MS/TP, No Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RS0844MSB24NMC</td>
+    <tr class="data-row" data-group="group13">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RS0844MSB24NMC</td>
     <td>Small, 8UIO, 4DO(SSR), 4DO(Relay), BACnet MS/TP, Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RS0844TS24NMC</td>
+    <tr class="data-row" data-group="group13">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RS0844TS24NMC</td>
     <td>Small, 8UIO, 4DO(SSR), 4DO(Relay), BACnet T1L, No Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RS0844TSB24NMC</td>
+    <tr class="data-row" data-group="group13">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RS0844TSB24NMC</td>
     <td>Small, 8UIO, 4DO(SSR), 4DO(Relay), BACnet T1L, Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RL1644ES24NMC</td>
+    <tr class="data-row" data-group="group13">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RL1644ES24NMC</td>
     <td>Large, 16UIO, 4DO(SSR), 4DO(Relay), BACnet IP, No Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RL1644ESB24NMC</td>
+    <tr class="data-row" data-group="group13">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RL1644ESB24NMC</td>
     <td>Large, 16UIO, 4DO(SSR), 4DO(Relay), BACnet IP, Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RL1644MS24NMC</td>
+    <tr class="data-row" data-group="group13">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RL1644MS24NMC</td>
     <td>Large, 16UIO, 4DO(SSR), 4DO(Relay), BACnet MS/TP, No Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RL1644MSB24NMC</td>
+    <tr class="data-row" data-group="group13">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RL1644MSB24NMC</td>
     <td>Large, 16UIO, 4DO(SSR), 4DO(Relay), BACnet MS/TP, Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RL1644TS24NMC</td>
+    <tr class="data-row" data-group="group13">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RL1644TS24NMC</td>
     <td>Large, 16UIO, 4DO(SSR), 4DO(Relay), BACnet T1L, No Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RL1644TSB24NMC</td>
+    <tr class="data-row" data-group="group13">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RL1644TSB24NMC</td>
     <td>Large, 16UIO, 4DO(SSR), 4DO(Relay), BACnet T1L, Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <th colspan="3" style="background-color: #368f8b;">230Vac</th>
+
+    <tr class="subsection-header" data-group="group14">
+      <td colspan="4">230Vac</td>
   </tr>
-  <tr>
-    <td>UN-RS0844ES230NMC</td>
+    <tr class="data-row" data-group="group14">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RS0844ES230NMC</td>
     <td>Small, 8UIO, 4DO(DO CHP), 4DO(Relay), BACnet IP, No Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RS0844ESB230NMC</td>
+    <tr class="data-row" data-group="group14">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RS0844ESB230NMC</td>
     <td>Small, 8UIO, 4DO(DO CHP), 4DO(Relay), BACnet IP, Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RS0844MS230NMC</td>
+    <tr class="data-row" data-group="group14">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RS0844MS230NMC</td>
     <td>Small, 8UIO, 4DO(DO CHP), 4DO(Relay), BACnet MS/TP, No Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RS0844MSB230NMC</td>
+    <tr class="data-row" data-group="group14">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RS0844MSB230NMC</td>
     <td>Small, 8UIO, 4DO(DO CHP), 4DO(Relay), BACnet MS/TP, Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RS0844TS230NMC</td>
+    <tr class="data-row" data-group="group14">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RS0844TS230NMC</td>
     <td>Small, 8UIO, 4DO(DO CHP), 4DO(Relay), BACnet T1L, No Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RS0844TSB230NMC</td>
+    <tr class="data-row" data-group="group14">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RS0844TSB230NMC</td>
     <td>Small, 8UIO, 4DO(DO CHP), 4DO(Relay), BACnet T1L, Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RL1644ES230NMC</td>
+    <tr class="data-row" data-group="group14">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RL1644ES230NMC</td>
     <td>Large, 16UIO, 4DO(DO CHP), 4DO(Relay), BACnet IP, No Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RL1644ESB230NMC</td>
+    <tr class="data-row" data-group="group14">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RL1644ESB230NMC</td>
     <td>Large, 16UIO, 4DO(DO CHP), 4DO(Relay), BACnet IP, Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RL1644MS230NMC</td>
+    <tr class="data-row" data-group="group14">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RL1644MS230NMC</td>
     <td>Large, 16UIO, 4DO(DO CHP), 4DO(Relay), BACnet MS/TP, No Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RL1644MSB230NMC</td>
+    <tr class="data-row" data-group="group14">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RL1644MSB230NMC</td>
     <td>Large, 16UIO, 4DO(DO CHP), 4DO(Relay), BACnet MS/TP, Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RL1644TS230NMC</td>
+    <tr class="data-row" data-group="group14">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RL1644TS230NMC</td>
     <td>Large, 16UIO, 4DO(DO CHP), 4DO(Relay), BACnet T1L, No Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>UN-RL1644TSB230NMC</td>
+    <tr class="data-row" data-group="group14">
+    <td class="img-cell"></td>
+    <td class="sku">UN-RL1644TSB230NMC</td>
     <td>Large, 16UIO, 4DO(DO CHP), 4DO(Relay), BACnet T1L, Bluetooth</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <th colspan="3" style="background-color: #368f8b;">Accessories</th>
+  <tr class="subsection-header" data-group="group15">
+      <td colspan="4">Accessories</td>
   </tr>
-  <tr>
-    <td>CW-Cov-L-Unitary</td>
+    <tr class="data-row" data-group="group15">
+    <td class="img-cell"></td>
+    <td class="sku">CW-Cov-L-Unitary</td>
     <td>Terminal cover for the L-version of the unitary controller (sold in pack of 10)</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>CW-Cov-S-Unitary</td>
+    <tr class="data-row" data-group="group15">
+    <td class="img-cell"></td>
+    <td class="sku">CW-Cov-S-Unitary</td>
     <td>Terminal cover for the S-version of the unitary controller (sold in pack of 10)</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>10BASE-T1L-ADAPT</td>
+    <tr class="data-row" data-group="group15">
+    <td class="img-cell"></td>
+    <td class="sku">10BASE-T1L-ADAPT</td>
     <td>IP-T1L single pair media adapter that allows converting 10BASE-T traffic to 10BASE-T1L (with power supply)</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>10BASE-T1L-ADAPT-0</td>
+    <tr class="data-row" data-group="group15">
+    <td class="img-cell"></td>
+    <td class="sku">10BASE-T1L-ADAPT-0</td>
     <td>IP-T1L single pair media adapter that allows converting 10BASE-T traffic to 10BASE-T1L (without power supply)</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>SCRW-TB-UNI-L</td>
+    <tr class="data-row" data-group="group15">
+    <td class="img-cell"></td>
+    <td class="sku">SCRW-TB-UNI-L</td>
     <td>Set of removable terminal blocks covering all models of Unitary controllers</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
-  <tr>
-    <td>IO-JUMPER-4-10</td>
+    <tr class="data-row" data-group="group15">
+    <td class="img-cell"></td>
+    <td class="sku">IO-JUMPER-4-10</td>
     <td>4-pin relay output Jumper Bar to connect 4 relays IN terminals (sold in pack of 10)</td>
-    <td>-</td>
+    <td class="price">-</td>
   </tr>
 </table>
+</div>
+
+  <script>
+    document.querySelectorAll('.subsection-header').forEach(function(header) {
+      header.addEventListener('click', function() {
+        var group = this.getAttribute('data-group');
+        var rows = document.querySelectorAll('.data-row[data-group="' + group + '"]');
+        var isCollapsed = this.classList.contains('collapsed');
+
+        if (isCollapsed) {
+          rows.forEach(function(row) { row.style.display = 'table-row'; });
+          header.classList.remove('collapsed');
+        } else {
+          rows.forEach(function(row) { row.style.display = 'none'; });
+          header.classList.add('collapsed');
+        }
+      });
+    });
+  </script>
+
 
 </body>
 </html>
