@@ -1,0 +1,69 @@
+/* ============================================================
+   MENUBAR - Fixed top header for all pages
+   ============================================================ */
+
+.menubar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff8f9;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.menubar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 32px 8px 32px;
+}
+
+.menubar-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.menubar-left img {
+    height: 36px;
+    width: auto;
+}
+
+.menubar-center {
+    flex: 1;
+    text-align: center;
+}
+
+.menubar-center h1 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #333333;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    white-space: nowrap;
+}
+
+.menubar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menubar-contact {
+    font-size: 13px;
+    color: #555555;
+    font-family: 'Nunito', sans-serif;
+}
+
+.menubar-divider {
+    border: none;
+    border-top: 1px solid #f8bbd0;
+    margin: 0;
+}
+
+/* Push page content below the fixed menubar */
+body {
+    padding-top: 80px;
+}

@@ -37,7 +37,8 @@ body {
   background: var(--bg);
   font-family: 'Nunito', sans-serif;
   color: var(--text-dark);
-  padding: 36px 24px;
+  margin-left: 30px;
+  padding: 36px 24px 36px 180px;
 }
 
 /* ── Header ── */
@@ -112,10 +113,11 @@ th {
   border: 1px solid var(--table-border);
 }
 
-/* Zebra satırlar */
+/* Zebra satırlar 
 tr:nth-child(even) td {
   background-color: var(--table-row-even);
 }
+*/
 
 /* ── Ana başlık satırı (koyu kırmızı) ── */
 .col-header th {
@@ -233,3 +235,66 @@ tr:nth-child(even) td {
     .subsection-header-actuator.collapsed td::after {
       content: ' ▼';   /* kapalı = aşağı ok */
     }
+
+
+/* ── tablodaki ürüne tıklandığında yanında açılan detay paneli için. ── */
+    .detail-panel {
+  position: fixed;
+  top: 0;
+  right: -350px;         /* Başlangıçta gizli */
+  width: 350px;
+  height: 100%;
+  background: #fff;
+  border-left: 2px solid #ccc;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+  z-index: 1001;
+}
+
+.detail-panel.open {
+  right: 0;              /* Panel açılır */
+}
+
+.detail-panel .close-btn {
+  font-size: 24px;
+  cursor: pointer;
+  float: right;
+}
+
+
+
+
+
+/* PDF ile CE ve Datasheet bağlantıları */
+
+.pdf-links {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.pdf-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+}
+
+.pdf-links a:hover {
+  text-decoration: underline;
+}
+
+/* Mouse hover – tüm veri satırları */
+.data-row:hover {
+  background-color: #f2f2f2 !important;
+  cursor: pointer;
+}
+
+/* Tıklanan satır – panel açıkken seçili renk */
+.data-row.selected {
+  background-color: #e0e0e0 !important;
+}

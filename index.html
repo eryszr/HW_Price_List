@@ -6,15 +6,29 @@
   <meta name="keyword" content="Honeywell Product List">
   <title>Honeywell Product List</title>
   <link rel="stylesheet" href="CSS/styles_Index.css">
+  <link rel="stylesheet" href="CSS/menubar.css">
+  <link rel="stylesheet" href="CSS/navbar.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <div class="header">
-    <img src="https://eryszr.github.io/HW_Price_List/img/Logo_honeywell.svg.png" alt="Honeywell Logo">
-    <h1>Honeywell 2026 Product List</h1>
+ <!-- Menubar -->
+  <div class="menubar">
+    <div class="menubar-inner">
+      <div class="menubar-left">
+        <img src="/img/Logo_honeywell.svg.png" alt="Honeywell Logo">
+      </div>
+      <div class="menubar-center">
+        <h1>Honeywell 2026 Product List</h1>
+      </div>
+      <div class="menubar-right">
+        <span class="menubar-contact">Contact: info@sazeron.com</span>
+      </div>
+    </div>
+    <hr class="menubar-divider">
   </div>
-  <hr>
+
+  <!-- Left Navbar - no back button on index -->
+  <nav class="navbar"></nav>
 
   <div class="container">
 
@@ -36,6 +50,7 @@
         <button class="btn" onclick="document.location='/pages/lineerValveActuator.html'">Lineer Valves & Actuator</button>
         <button class="btn" onclick="document.location='/pages/smallLineerValveActutor.html'">Small Lineer Valves & Actuator</button>
         <button class="btn" onclick="document.location='/pages/butterflyValveActuator.html'">Butterfly Valves & Actuator</button>
+        <button class="btn" onclick="document.location='/pages/pressureIndependentValveActuator.html'">Pressure Independent Valves & Actuator</button>
       </div>
     </div>
 
@@ -66,11 +81,4 @@
       <div class="group-label">Other Products</div>
       <div class="btn-row">
         <button class="btn" onclick="document.location='/pages/frequencyInverter.html'">Frequency Inverter</button>
-        <button class="btn" onclick="document.location='/pages/VAV.html'">VAV</button>
-      </div>
-    </div>
-
-  </div>
-
-</body>
-</html>
+        <button class="bt

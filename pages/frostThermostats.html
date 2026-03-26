@@ -4,68 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frost Thermostat</title>
-
-    <style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 12px;
-}
-
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 4px;
-}
-
-tr:nth-child(even) {
-  background-color: #D6EEEE;
-}
-</style>
-
+    <link rel="stylesheet" href="../CSS/styles_Product.css">
+    <link rel="stylesheet" href="../CSS/menubar.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
 </head>
+
 <body>
-     <h1>Frost Thermostat</h1>
-<table border="1" style="width:70%">
-  <tr>
-    <th style="background-color: #343a40;"></th>
-    <th style="background-color: #343a40; color:white;">SKU</th>
-    <th style="background-color: #343a40; color:white;">Description</th>
-    <th style="background-color: #343a40; color:white;">Price $</th>
-  </tr>
-  <tr>
-    <td rowspan="6">Resim Eklenecek</td>
-    <td>FT6960-18</td>
-    <td>1.8m coil length, with bulb, manual reset</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>FT6960-30</td>
-    <td>3m coil length, without bulb, manual reset</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>FT6960-60</td>
-    <td>6m coil length, without bulb, manual reset</td>
-    <td>-</td> 
-  </tr>
-  <tr>
-    <td>FT6961-18</td>
-    <td>1.8m coil length, with bulb, automatic reset</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>FT6961-30</td>
-    <td>3m coil length, without bulb, automatic reset</td>
-    <td>-</td>
-  </tr>
-    <tr>
-    <td>FT6961-60</td>
-    <td>6m coil length, without bulb, automatic reset</td>
-    <td>-</td>
-  </tr>
-</table>
+
+      <!-- Top Menubar -->
+      <div class="menubar">
+  <div class="menubar-inner">
+    <div class="menubar-left">
+      <img src="../img/Logo_honeywell.svg.png" alt="Honeywell Logo">
+    </div>
+    <div class="menubar-center">
+      <h1>Frost Thermostat</h1>
+    </div>
+    <div class="menubar-right">
+      <span class="menubar-contact">Contact: info@sazeron.com</span>
+    </div>
+  </div>
+  <hr class="menubar-divider">
+</div>
+
+  <!-- Left Navbar -->
+  <nav class="navbar">
+    <a href="../index.html" class="navbar-back">
+      <span class="arrow">←</span>
+      Back
+    </a>
+  </nav>
+
+    <div class="table-wrapper">
+
+        <table>
+            <tr class="col-header">
+                <th></th>
+                <th>SKU</th>
+                <th>Description</th>
+                <th>Price $</th>
+            </tr>
+
+            <!-- SECTION -->
+            <tr class="section-header">
+                <td colspan="4">Frost Thermostat</td>
+            </tr>
+
+            <!-- Subsection -->
+            <tr class="subsection-header" data-group="group1">
+                <td colspan="4">Models</td>
+            </tr>
+
+            <tr class="data-row" data-group="group1">
+                <td class="img-cell"></td>
+                <td class="sku">FT6960-18</td>
+                <td>1.8m coil length, with bulb, manual reset</td>
+                <td class="price">-</td>
+            </tr>
+
+            <tr class="data-row" data-group="group1">
+                <td class="img-cell"></td>
+                <td class="sku">FT6960-30</td>
+                <td>3m coil length, without bulb, manual reset</td>
+                <td class="price">-</td>
+            </tr>
+
+            <tr class="data-row" data-group="group1">
+                <td class="img-cell"></td>
+                <td class="sku">FT6960-60</td>
+                <td>6m coil length, without bulb, manual reset</td>
+                <td class="price">-</td>
+            </tr>
+
+            <tr class="data-row" data-group="group1">
+                <td class="img-cell"></td>
+                <td class="sku">FT6961-18</td>
+                <td>1.8m coil length, with bulb, automatic reset</td>
+                <td class="price">-</td>
+            </tr>
+
+            <tr class="data-row" data-group="group1">
+                <td class="img-cell"></td>
+                <td class="sku">FT6961-30</td>
+                <td>3m coil length, without bulb, automatic reset</td>
+                <td class="price">-</td>
+            </tr>
+
+            <tr class="data-row" data-group="group1">
+                <td class="img-cell"></td>
+                <td class="sku">FT6961-60</td>
+                <td>6m coil length, without bulb, automatic reset</td>
+                <td class="price">-</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div id="detail-panel" class="detail-panel">
+  <span class="close-btn">&times;</span>
+  <h2 id="detail-title"></h2>
+  
+  <div class="pdf-links">
+    <a id="datasheet-link" href="#" target="_blank" class="pdf-link">Datasheet</a>
+    <a id="ce-link" href="#" target="_blank" class="pdf-link">CE Certificate</a>
+  </div>
+
+</div>
+
+    <script>
+        document.querySelectorAll('.subsection-header').forEach(function(header) {
+            header.addEventListener('click', function() {
+                const group = this.getAttribute('data-group');
+                const rows = document.querySelectorAll('.data-row[data-group="' + group + '"]');
+                const isCollapsed = this.classList.contains('collapsed');
+
+                if (isCollapsed) {
+                    rows.forEach(r => r.style.display = 'table-row');
+                    this.classList.remove('collapsed');
+                } else {
+                    rows.forEach(r => r.style.display = 'none');
+                    this.classList.add('collapsed');
+                }
+            });
+        });
+
+        
+let selectedRow = null;
+
+
+// DATA ROW CLICK → PANEL OPEN
+document.querySelectorAll('.data-row').forEach(function(row) {
+  row.addEventListener('click', function() {
+
+    // Önce tüm satırlardan selected sınıfını kaldır
+    document.querySelectorAll('.data-row').forEach(r => r.classList.remove('selected'));
+
+    // Bu tıklanan satırı seç
+    this.classList.add('selected');
+    selectedRow = this;
+
+    const sku = this.querySelector('.sku').textContent;
+
+    document.getElementById('detail-title').textContent = sku;
+
+    // PDF linklerini SKU’ya göre ayarla
+    document.getElementById('datasheet-link').href = `../pdf/datasheet/${sku}.pdf`;
+    document.getElementById('ce-link').href = `../pdf/ce/${sku}.pdf`;
+
+    // Paneli aç
+    document.getElementById('detail-panel').classList.add('open');
+  });
+});
+
+// PANEL CLOSE
+document.querySelector('.close-btn').addEventListener('click', function() {
+  document.getElementById('detail-panel').classList.remove('open');
+
+  // Panel kapanınca seçili satırı eski haline döndür
+  if (selectedRow) {
+    selectedRow.classList.remove('selected');
+    selectedRow = null;
+  }
+});
+    </script>
+
 </body>
 </html>

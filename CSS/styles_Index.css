@@ -24,7 +24,7 @@ body {
   background: var(--bg);
   font-family: 'Nunito', sans-serif;
   color: var(--text-dark);
-  padding: 40px 20px;
+  padding: 40px 20px 40px 0;
 }
 
 /* ── Header ── */
